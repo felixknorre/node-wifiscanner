@@ -125,17 +125,17 @@ app.get('/api/v2/robot/capabilities/WifiConfigurationCapability', (req, res) => 
     hopper_wlan1 = startChannelHopping("wlan1", "1 2 3 4", "HT20", 0.25);
     hopper_wlan2 = startChannelHopping("wlan2", "5 6 7 8", "HT20", 0.25);
     hopper_wlan3 = startChannelHopping("wlan3", "9 10 11", "HT20", 0.25);
-    scan_interval_wlan1 = 1.04;
-    scan_interval_wlan2 = 1.04;
+    scan_interval_wlan1 = 1;
+    scan_interval_wlan2 = 1;
     scan_interval_wlan3 = 0.75;
   } else {
     console.log("Scanning in 5 GHz");
     hopper_wlan1 = startChannelHopping("wlan1", "36 40 44 48 52 56 60", "HT20", 0.25);
     hopper_wlan2 = startChannelHopping("wlan2", "64 100 104 108 112 116 120", "HT20", 0.25);
     hopper_wlan3 = startChannelHopping("wlan3", "124 128 132 136 140 144", "HT20", 0.25);
-    scan_interval_wlan1 = 1.82;
-    scan_interval_wlan2 = 1.82;
-    scan_interval_wlan3 = 1.56;
+    scan_interval_wlan1 = 1.75;
+    scan_interval_wlan2 = 1.75;
+    scan_interval_wlan3 = 1.5;
   }
 
   hopper_wlan1.stdout.on('data', (data) => {
