@@ -11,6 +11,7 @@ Before the server can be started, `server.js` must be edited and the desired SSI
 The node server can be started with the following command:
 
 ```bash
+npm install
 node server.js
 ```
 The API can then be tested with the command:
